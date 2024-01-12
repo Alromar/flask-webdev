@@ -1,0 +1,39 @@
+
+
+<html>
+<head>
+ <title>Home page</title>
+</head>
+    <body>
+    <h1>Home page!</h1>
+    <p>Hello!</p>
+    <p>{{content}}</p>
+    <p>{{r}}</p>
+    {% for _ in range(0,10) %}
+        <p>Hello</p>
+    {% endfor %}
+    {% for x in range(10) %}
+        {% if x % 2 == 1 %}
+        <p>{{x}}</p>
+        {% endif %}
+    {% endfor %}
+    </body>
+
+</html>
+<!--# @app.route("/<name>")-->
+<!--# def user(name):-->
+<!--#     return f"Hello {name}!"-->
+<!--#-->
+<!--# @app.route("/voetbal")-->
+<!--# def voetbal():-->
+<!--#     return redirect("https://www.vi.nl/")-->
+<!--#-->
+<!--# @app.route("/admin")-->
+<!--# def admin():-->
+<!--#     return redirect(url_for("user", name="Admin!"))-->
+
+<!--{% extends "base.html" %}-->
+<!--{% block title %}Home Page{% endblock %}-->
+<!--{% block content %}-->
+<!--<h1>test</h1>-->
+<!--{% endblock %}-->

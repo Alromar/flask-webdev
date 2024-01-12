@@ -1,0 +1,5 @@
+Bij importproblemen of als de server het niet meer doet:
+
+pip uninstall Flask Jinja 2
+
+pip install Flask Jinja2
